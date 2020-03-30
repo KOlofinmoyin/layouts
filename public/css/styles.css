@@ -5,9 +5,30 @@ body{
 }
 
 header{
-  background: black;
+  background-color: black;
+  height: 130px;
   padding: 20px;
+  text-align: center;
+}
+
+header a {
   color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+header .logo a {
+  background-image: url("../../images/Logo2.png");
+  background-size: 275px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 80px;
+  position: relative;
+  text-indent: -9999999px;
+  top: -40px;
+  width: 300px;
+
 }
 
 section{
@@ -52,7 +73,6 @@ li{
   background: grey;
   border-radius: 3px;
   padding: 5px;
-  text-decoration: none;
 }
 
 a{
