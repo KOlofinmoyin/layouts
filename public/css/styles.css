@@ -6,9 +6,11 @@ body{
 
 header{
   background-color: black;
-  height: 130px;
+  background-image: url("../../images/hero.jpeg");
+  height: 400px;
   padding: 20px;
   text-align: center;
+  color: white;
 }
 
 header a {
@@ -26,7 +28,7 @@ header .logo a {
   height: 80px;
   position: relative;
   text-indent: -9999999px;
-  top: -40px;
+  top: -20px;
   width: 300px;
 
 }
