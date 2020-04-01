@@ -2,11 +2,16 @@ body{
   background: rgb(58,58,58);
   margin: 0;
   padding: 0;
+  font-family: Arial,Helvetica,sans-serif;
 }
+
+/* HEADERS */
 
 header{
   background-color: black;
-  background-image: url("../../images/hero.jpeg");
+  background-image: url("../../images/hero.jpg");
+  background-size: 1450px;
+  background-repeat: no-repeat;
   height: 400px;
   padding: 20px;
   text-align: center;
@@ -22,18 +27,48 @@ header a {
 
 header .logo a {
   background-image: url("../../images/Logo2.png");
-  background-size: 275px;
+  background-position: center;
+  background-size: 180px;
   background-repeat: no-repeat;
   display: inline-block;
   height: 80px;
   position: relative;
   text-indent: -9999999px;
-  top: -20px;
-  width: 300px;
-
+  top: -40px;
+  width: 250px;
 }
 
-section{
+nav a{
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li{
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+nav li:hover{
+  background-color: red;
+}
+nav li:first-child{
+  background: tomato;
+}
+
+/* FEATURES */
+.features {
   background: white;
   padding: 20px;
   color: grey;
@@ -41,19 +76,23 @@ section{
   flex-direction: row;
 }
 
-footer{
-  background: black;
-  padding: 10px 20px;
-  color: white;
-}
-
-section div{
-  background: red;
+.features figure {
+  background: white;
   margin: auto;
-  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 200px;
   padding-left: 10px;
 }
 
+.features figure img{
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: grey 0 0 10px;
+  width: 200px;
+}
+
+/* LOWER SECTION:
 section .lower-section{
   background: gray;
   opacity: 0.9;
@@ -61,37 +100,14 @@ section .lower-section{
   width: 100px;
   padding-left: 10px;
   color: white;
-}
+} */
 
-ul{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
 
-li{
-  display: inline-block;
-  margin-right: 20px;
-  background: grey;
-  border-radius: 3px;
-  padding: 5px;
-}
-
-a{
-  text-decoration: none;
-}
-
-a:active{
-  background: white;
-}
-
-a:hover{
-  text-decoration: underline;
-}
-
-li:hover{
-  background-color: red;
-}
-li:first-child{
-  background: tomato;
+/* FOOTER */
+footer{
+  background: black;
+  padding: 20px 20px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
 }
