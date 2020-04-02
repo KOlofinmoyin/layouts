@@ -67,6 +67,10 @@ nav li:first-child{
   background: tomato;
 }
 
+/* RESPONSIVE RULES */
+@@media screen and (max-width: 708px) {
+
+}
 /* FEATURES */
 .features {
   background: white;
@@ -110,17 +114,4 @@ footer{
   color: white;
   text-align: center;
   font-size: 12px;
-}
-
-/* MEDIA QUERY */
-@media screen and (min-width: 400px) {
-  .features{
-    background: pink;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .features{
-    background: red;
-  }
 }
