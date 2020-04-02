@@ -111,3 +111,16 @@ footer{
   text-align: center;
   font-size: 12px;
 }
+
+/* MEDIA QUERY */
+@media screen and (min-width: 400px) {
+  .features{
+    background: pink;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .features{
+    background: red;
+  }
+}
