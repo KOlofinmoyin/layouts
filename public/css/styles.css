@@ -38,6 +38,10 @@ header .logo a {
   width: 250px;
 }
 
+header .mobile {
+  display: none;
+}
+
 nav a{
   text-decoration: none;
 }
@@ -68,8 +72,21 @@ nav li:first-child{
 }
 
 /* RESPONSIVE RULES */
-@@media screen and (max-width: 708px) {
+@media screen and (max-width: 708px) {
+  header .mobile{
+    display: inline-block;
+  }
 
+  header .desktop{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500) {
+  header {
+    height: 200px;
+    background-position: 0 -0px;
+  }
 }
 /* FEATURES */
 .features {
@@ -94,6 +111,13 @@ nav li:first-child{
   border-radius: 50%;
   box-shadow: grey 0 0 10px;
   width: 200px;
+}
+
+/* RESPIONSIVE RULES */
+@media screen and (max-width: 708px) {
+  .features {
+    display: block;
+  }
 }
 
 /* LOWER SECTION:
